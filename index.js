@@ -15,14 +15,18 @@ The output should be a number.
 function genderCount(array, string){
 //CODE BELOW HERE
 var count = 0;
+var genderCon = {
+  female: 4, 
+  male: 3,
+  non: 1,}
 for(var i = 0; i <= array.length - 1; i++){
-  if(array[i].gender === 'female' , 'male' , 'non-binary'){
+  if(array[i].gender === genderCon){
   count++  
   }
 }
-return count;
+return genderCon;
 
 //CODE ABOVE HERE
 }
-console.log(genderCount('non-binary'))
-//genderCount(customers, 'male')
+console.log(genderCount('genderCon'))
+//genderCount(customers, genderCon)
