@@ -12,21 +12,18 @@ The output should be a number.
 
 */
 
-function genderCount(array, string){
+function genderCount(array, genderCon){
 //CODE BELOW HERE
 var count = 0;
-var genderCon = {
-  female: 4, 
-  male: 3,
-  non: 1,}
+
 for(var i = 0; i <= array.length - 1; i++){
   if(array[i].gender === genderCon){
-  count++  
+   count++
   }
 }
-return genderCon;
+return count;
 
 //CODE ABOVE HERE
 }
-console.log(genderCount('genderCon'))
+console.log(genderCount('female'))
 //genderCount(customers, genderCon)
